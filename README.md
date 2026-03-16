@@ -14,8 +14,9 @@ O objetivo principal foi realizar a limpeza da base de dados, criar novas catego
 A base de dados passou por um rigoroso processo de auditoria e limpeza para garantir que os cálculos estatísticos fossem precisos. As principais etapas foram:
 1. **Correção de Tipos de Dados (Casting):** Identificação e conversão da coluna de salários (`Salary`) para o tipo numérico (`float`), viabilizando as operações matemáticas.
 2. **Tratamento de Anomalias (Outliers):** Utilização de gráficos de dispersão (Boxplot) para identificar salários completamente fora do padrão. Esses registros foram analisados e removidos para não distorcer as médias salariais.
-3. **Validação de Integridade:** Verificação e remoção de dados duplicados, além da confirmação de que colunas geográficas fundamentais (como `Country`) não possuíam valores ausentes (nulos).
-4. **Engenharia de Atributos (Feature Engineering):** Criação de uma nova tabela e categorização dos níveis de experiência dos profissionais, padronizando-os em três grandes grupos: **Júnior, Pleno e Sênior**.
+   <img width="608" height="422" alt="Outlier_boxplot" src="https://github.com/user-attachments/assets/e8a4ad0c-8eff-407b-9fce-027bc4117360" />
+4. **Validação de Integridade:** Verificação e remoção de dados duplicados, além da confirmação de que colunas geográficas fundamentais (como `Country`) não possuíam valores ausentes (nulos).
+5. **Engenharia de Atributos (Feature Engineering):** Criação de uma nova tabela e categorização dos níveis de experiência dos profissionais, padronizando-os em três grandes grupos: **Júnior, Pleno e Sênior**.
 
 ##  Principais Questionamentos de Negócio
 Durante a Análise Exploratória, busquei responder às seguintes perguntas:
@@ -40,7 +41,4 @@ A análise de ferramentas revelou um perfil de especialização claro para cada 
 - **Data Analyst:** Alta demanda e consolidação no uso de *SQL* e *Python*.
 - **Data Scientist:** Combinação técnica focada em *Machine Learning* e *SQL*.
 - **Data Engineer:** Forte exigência em infraestrutura *Cloud* e *Python*.
-
----
-* <img width="608" height="422" alt="Outlier_boxplot" src="https://github.com/user-attachments/assets/e8a4ad0c-8eff-407b-9fce-027bc4117360" />
 
